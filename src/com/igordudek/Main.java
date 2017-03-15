@@ -25,7 +25,7 @@ public class Main {
 
         //Inicjacja pętli
         while (userNumber != secretNumber) {
-            i += 1;
+            i++;
             System.out.println("Podaj liczbę");
             userNumber = sc.nextInt();
             if (userNumber > secretNumber) {
@@ -36,5 +36,6 @@ public class Main {
                 System.out.println("BRAWO " + userName + " Poszukiwana liczba to: " + secretNumber + " Udało Ci się za " + i + " razem");
             }
         }
+        sc.close();
     }
 }
